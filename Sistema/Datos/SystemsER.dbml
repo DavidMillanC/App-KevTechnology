@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SYSTEMS-ER" Class="SystemsERDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-5BESCES;Initial Catalog=SYSTEMS-ER;Integrated Security=True" SettingsObjectName="Datos.Properties.Settings" SettingsPropertyName="SYSTEMS_ERConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Categoria" Member="Categoria">
+    <Type Name="Categoria">
+      <Column Name="IdCategoria" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Descripcion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Categoria_Repuesto" Member="Repuesto" ThisKey="IdCategoria" OtherKey="IdCategoria" Type="Repuesto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Usuario" Member="Usuario">
+    <Type Name="Usuario">
+      <Column Name="IdUsuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Usuario" Member="Usuario1" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Contraseña" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Detalle_Factura" Member="Detalle_Factura">
+    <Type Name="Detalle_Factura">
+      <Column Name="IdFactura" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdProducto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Precio" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Association Name="Factura_Detalle_Factura" Member="Factura" ThisKey="IdFactura" OtherKey="IdFactura" Type="Factura" IsForeignKey="true" />
+      <Association Name="Repuesto_Detalle_Factura" Member="Repuesto" ThisKey="IdProducto" OtherKey="IdRepuesto" Type="Repuesto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Factura" Member="Factura">
+    <Type Name="Factura">
+      <Column Name="IdFactura" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CedulaCliente" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Subtotal" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Iva" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Descuento" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Total" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Association Name="Factura_Detalle_Factura" Member="Detalle_Factura" ThisKey="IdFactura" OtherKey="IdFactura" Type="Detalle_Factura" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Proveedor" Member="Proveedor">
+    <Type Name="Proveedor">
+      <Column Name="IdProveedor" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Representante" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Direccion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Ciudad" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Teléfono" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Proveedor_Repuesto" Member="Repuesto" ThisKey="IdProveedor" OtherKey="IdProveedor" Type="Repuesto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Repuesto" Member="Repuesto">
+    <Type Name="Repuesto">
+      <Column Name="IdRepuesto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="IdCategoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdProveedor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PrecioFabrica" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="PrecioVenta" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Stock" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Repuesto_Detalle_Factura" Member="Detalle_Factura" ThisKey="IdRepuesto" OtherKey="IdProducto" Type="Detalle_Factura" />
+      <Association Name="Categoria_Repuesto" Member="Categoria" ThisKey="IdCategoria" OtherKey="IdCategoria" Type="Categoria" IsForeignKey="true" />
+      <Association Name="Proveedor_Repuesto" Member="Proveedor" ThisKey="IdProveedor" OtherKey="IdProveedor" Type="Proveedor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VistaReporteMasVendido" Member="VistaReporteMasVendido">
+    <Type Name="VistaReporteMasVendido">
+      <Column Name="Repuesto" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Categoria" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Proveedor" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Representante" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.CP_ActualizarCategoria" Method="CP_ActualizarCategoria">
+    <Parameter Name="IdCategoria" Parameter="idCategoria" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="Text" />
+    <Parameter Name="Descripcion" Parameter="descripcion" Type="System.String" DbType="Text" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ListarUsuario" Method="CP_ListarUsuario">
+    <Parameter Name="valor" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="CP_ListarUsuarioResult">
+      <Column Name="IdUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Usuario" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Contraseña" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CP_ActualizarFactura" Method="CP_ActualizarFactura">
+    <Parameter Name="IdFactura" Parameter="idFactura" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Cedula" Parameter="cedula" Type="System.String" DbType="Text" />
+    <Parameter Name="Fecha" Parameter="fecha" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Subtotal" Parameter="subtotal" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="Iva" Parameter="iva" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="Descuento" Parameter="descuento" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="Total" Parameter="total" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ActualizarProveedor" Method="CP_ActualizarProveedor">
+    <Parameter Name="IdProveedor" Parameter="idProveedor" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="Text" />
+    <Parameter Name="Representante" Parameter="representante" Type="System.String" DbType="Text" />
+    <Parameter Name="Direccion" Parameter="direccion" Type="System.String" DbType="Text" />
+    <Parameter Name="Ciudad" Parameter="ciudad" Type="System.String" DbType="Text" />
+    <Parameter Name="Telefono" Parameter="telefono" Type="System.String" DbType="Text" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ActualizarRepuesto" Method="CP_ActualizarRepuesto">
+    <Parameter Name="IdRepuesto" Parameter="idRepuesto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="Text" />
+    <Parameter Name="IdCategoria" Parameter="idCategoria" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdProveedor" Parameter="idProveedor" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PrecioFabrica" Parameter="precioFabrica" Type="System.Decimal" DbType="Decimal(12,2)" />
+    <Parameter Name="PrecioVenta" Parameter="precioVenta" Type="System.Decimal" DbType="Decimal(12,2)" />
+    <Parameter Name="Stock" Parameter="stock" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ActualizarUsuario" Method="CP_ActualizarUsuario">
+    <Parameter Name="IdUsuario" Parameter="idUsuario" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Usuario" Parameter="usuario" Type="System.String" DbType="Text" />
+    <Parameter Name="Contrasena" Parameter="contrasena" Type="System.String" DbType="Text" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_EliminarCategoria" Method="CP_EliminarCategoria">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.[CP_EliminarDetalle-Factura]" Method="CP_EliminarDetalle_Factura">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_EliminarFactura" Method="CP_EliminarFactura">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_EliminarProveedor" Method="CP_EliminarProveedor">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_EliminarRepuesto" Method="CP_EliminarRepuesto">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_EliminarUsuario" Method="CP_EliminarUsuario">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_InsertarCategoria" Method="CP_InsertarCategoria">
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="Text" />
+    <Parameter Name="Descripcion" Parameter="descripcion" Type="System.String" DbType="Text" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.[CP_InsertarDetalle-Factura]" Method="CP_InsertarDetalle_Factura">
+    <Parameter Name="IdFactura" Parameter="idFactura" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdProducto" Parameter="idProducto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Cantidad" Parameter="cantidad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Precio" Parameter="precio" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_InsertarFactura" Method="CP_InsertarFactura">
+    <Parameter Name="IdFactura" Parameter="idFactura" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Cedula" Parameter="cedula" Type="System.String" DbType="Text" />
+    <Parameter Name="Fecha" Parameter="fecha" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Subtotal" Parameter="subtotal" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="Iva" Parameter="iva" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="Descuento" Parameter="descuento" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="Total" Parameter="total" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_InsertarFacturaDetalle" Method="CP_InsertarFacturaDetalle">
+    <Parameter Name="Cedula" Parameter="cedula" Type="System.String" DbType="Text" />
+    <Parameter Name="Fecha" Parameter="fecha" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Subtotal" Parameter="subtotal" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="Iva" Parameter="iva" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="Descuento" Parameter="descuento" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="Total" Parameter="total" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="IdFactura" Parameter="idFactura" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdProducto" Parameter="idProducto" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Cantidad" Parameter="cantidad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Precio" Parameter="precio" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_InsertarProveedor" Method="CP_InsertarProveedor">
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="Text" />
+    <Parameter Name="Representante" Parameter="representante" Type="System.String" DbType="Text" />
+    <Parameter Name="Direccion" Parameter="direccion" Type="System.String" DbType="Text" />
+    <Parameter Name="Ciudad" Parameter="ciudad" Type="System.String" DbType="Text" />
+    <Parameter Name="Telefono" Parameter="telefono" Type="System.String" DbType="Text" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_InsertarRepuesto" Method="CP_InsertarRepuesto">
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="Text" />
+    <Parameter Name="IdCategoria" Parameter="idCategoria" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdProveedor" Parameter="idProveedor" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PrecioFabrica" Parameter="precioFabrica" Type="System.Decimal" DbType="Decimal(12,2)" />
+    <Parameter Name="PrecioVenta" Parameter="precioVenta" Type="System.Decimal" DbType="Decimal(12,2)" />
+    <Parameter Name="Stock" Parameter="stock" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_InsertarUsuario" Method="CP_InsertarUsuario">
+    <Parameter Name="Usuario" Parameter="usuario" Type="System.String" DbType="Text" />
+    <Parameter Name="Contrasena" Parameter="contrasena" Type="System.String" DbType="Text" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ListarCategoria" Method="CP_ListarCategoria">
+    <Parameter Name="valor" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="CP_ListarCategoriaResult">
+      <Column Name="IdCategoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Descripcion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.[CP_ListarDetalle-Factura]" Method="CP_ListarDetalle_Factura">
+    <Parameter Name="valor" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="CP_ListarDetalle_FacturaResult">
+      <Column Name="IdFactura" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdProducto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Precio" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CP_ListarFactura" Method="CP_ListarFactura">
+    <Parameter Name="valor" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="CP_ListarFacturaResult">
+      <Column Name="IdFactura" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CedulaCliente" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Subtotal" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Iva" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Descuento" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Total" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CP_ListarProveedor" Method="CP_ListarProveedor">
+    <Parameter Name="valor" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="CP_ListarProveedorResult">
+      <Column Name="IdProveedor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Representante" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Direccion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Ciudad" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Teléfono" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CP_ListarRepuesto" Method="CP_ListarRepuesto">
+    <Parameter Name="valor" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="CP_ListarRepuestoResult">
+      <Column Name="IdRepuesto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="IdCategoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdProveedor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PrecioFabrica" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="PrecioVenta" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Stock" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

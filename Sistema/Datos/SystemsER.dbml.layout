@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SystemsER">
+  <DataContextMoniker Name="/SystemsERDataContext" />
+  <nestedChildShapes>
+    <classShape Id="cf41cce5-bce1-4dae-a948-6adb5ad69cb4" absoluteBounds="0.75, 1.375, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/SystemsERDataContext/Categoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a5bfd0a6-e42e-4d60-97f4-1efd6ea82024" absoluteBounds="0.765, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="296a4d55-e8b3-4c49-b926-f7cf0c22f72f" absoluteBounds="6.75, 3.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/SystemsERDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1153fd4-8010-42e7-98d0-fbe853875bd2" absoluteBounds="6.765, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="23d63410-91ad-40e1-b65d-84d87e9ff8f3" absoluteBounds="6.25, 1.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SystemsERDataContext/Detalle_Factura" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a838f7c-0965-4f90-8ce2-5dfe4c738b5e" absoluteBounds="6.265, 1.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="949a45cc-f289-442b-9f3e-617eca539012" absoluteBounds="3.5, 4.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/SystemsERDataContext/Factura" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4df253a7-d8c8-4594-8bee-cbca5d963255" absoluteBounds="3.515, 5.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="27b24a46-89d1-4b62-9f20-1b2a2ccfcf88" absoluteBounds="0.75, 5, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/SystemsERDataContext/Proveedor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="53d1d5b3-b510-4b71-9beb-7fd0d2c8a2ae" absoluteBounds="0.765, 5.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ee069914-c933-406c-946d-fa0f0586378a" absoluteBounds="3.5, 0.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/SystemsERDataContext/Repuesto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd01fef4-35e0-4aca-aeb9-6475ea8aab6e" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 6.11464680989583); (6.46875 : 6.11464680989583); (6.46875 : 2.82859537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SystemsERDataContext/Factura/Factura_Detalle_Factura" />
+      <nodes>
+        <classShapeMoniker Id="949a45cc-f289-442b-9f3e-617eca539012" />
+        <classShapeMoniker Id="23d63410-91ad-40e1-b65d-84d87e9ff8f3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.03929768880208); (6.25 : 2.03929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SystemsERDataContext/Repuesto/Repuesto_Detalle_Factura" />
+      <nodes>
+        <classShapeMoniker Id="ee069914-c933-406c-946d-fa0f0586378a" />
+        <classShapeMoniker Id="23d63410-91ad-40e1-b65d-84d87e9ff8f3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.06814697265625); (3.04166666666667 : 2.06814697265625 : JumpStart); (3.20833333333333 : 2.06814697265625 : JumpEnd); (3.5 : 2.06814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SystemsERDataContext/Categoria/Categoria_Repuesto" />
+      <nodes>
+        <classShapeMoniker Id="cf41cce5-bce1-4dae-a948-6adb5ad69cb4" />
+        <classShapeMoniker Id="ee069914-c933-406c-946d-fa0f0586378a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5); (3.125 : 4.625); (3.125 : 1.44032148632813); (3.5 : 1.44032148632813)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SystemsERDataContext/Proveedor/Proveedor_Repuesto" />
+      <nodes>
+        <classShapeMoniker Id="27b24a46-89d1-4b62-9f20-1b2a2ccfcf88" />
+        <classShapeMoniker Id="ee069914-c933-406c-946d-fa0f0586378a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="da8a042a-4b00-4102-b670-3a240a547823" absoluteBounds="0.625, 3, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/SystemsERDataContext/VistaReporteMasVendido" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6e2bad77-0888-4d47-93ed-577e798c25e7" absoluteBounds="0.64000000000000012, 3.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

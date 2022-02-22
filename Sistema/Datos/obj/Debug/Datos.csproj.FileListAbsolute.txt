@@ -1,0 +1,100 @@
+C:\ProgramacionAvanzada\SuperMercadoLinqSql\Datos\bin\Debug\Datos.dll.config
+C:\ProgramacionAvanzada\SuperMercadoLinqSql\Datos\bin\Debug\Datos.dll
+C:\ProgramacionAvanzada\SuperMercadoLinqSql\Datos\bin\Debug\Datos.pdb
+C:\ProgramacionAvanzada\SuperMercadoLinqSql\Datos\bin\Debug\Entidades.dll
+C:\ProgramacionAvanzada\SuperMercadoLinqSql\Datos\bin\Debug\Entidades.pdb
+C:\ProgramacionAvanzada\SuperMercadoLinqSql\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\ProgramacionAvanzada\SuperMercadoLinqSql\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\ProgramacionAvanzada\SuperMercadoLinqSql\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\ProgramacionAvanzada\SuperMercadoLinqSql\Datos\obj\Debug\Datos.dll
+C:\ProgramacionAvanzada\SuperMercadoLinqSql\Datos\obj\Debug\Datos.pdb
+C:\Users\Rober\source\repos\ADO\SuperMercadoLinqSql\Datos\bin\Debug\Datos.dll.config
+C:\Users\Rober\source\repos\ADO\SuperMercadoLinqSql\Datos\bin\Debug\Datos.dll
+C:\Users\Rober\source\repos\ADO\SuperMercadoLinqSql\Datos\bin\Debug\Datos.pdb
+C:\Users\Rober\source\repos\ADO\SuperMercadoLinqSql\Datos\bin\Debug\Entidades.dll
+C:\Users\Rober\source\repos\ADO\SuperMercadoLinqSql\Datos\bin\Debug\Entidades.pdb
+C:\Users\Rober\source\repos\ADO\SuperMercadoLinqSql\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\Rober\source\repos\ADO\SuperMercadoLinqSql\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Rober\source\repos\ADO\SuperMercadoLinqSql\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Rober\source\repos\ADO\SuperMercadoLinqSql\Datos\obj\Debug\Datos.dll
+C:\Users\Rober\source\repos\ADO\SuperMercadoLinqSql\Datos\obj\Debug\Datos.pdb
+C:\Users\Rober\source\repos\ADO\Pueba2HAgendaBD\Datos\bin\Debug\Datos.dll.config
+C:\Users\Rober\source\repos\ADO\Pueba2HAgendaBD\Datos\bin\Debug\Datos.dll
+C:\Users\Rober\source\repos\ADO\Pueba2HAgendaBD\Datos\bin\Debug\Datos.pdb
+C:\Users\Rober\source\repos\ADO\Pueba2HAgendaBD\Datos\bin\Debug\Entidades.dll
+C:\Users\Rober\source\repos\ADO\Pueba2HAgendaBD\Datos\bin\Debug\Entidades.pdb
+C:\Users\Rober\source\repos\ADO\Pueba2HAgendaBD\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\Rober\source\repos\ADO\Pueba2HAgendaBD\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Rober\source\repos\ADO\Pueba2HAgendaBD\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Rober\source\repos\ADO\Pueba2HAgendaBD\Datos\obj\Debug\Datos.dll
+C:\Users\Rober\source\repos\ADO\Pueba2HAgendaBD\Datos\obj\Debug\Datos.pdb
+D:\Cuarto Semestre\Programacion Avanzada\Pueba2HAgendaBD\Datos\bin\Debug\Datos.dll.config
+D:\Cuarto Semestre\Programacion Avanzada\Pueba2HAgendaBD\Datos\bin\Debug\Datos.dll
+D:\Cuarto Semestre\Programacion Avanzada\Pueba2HAgendaBD\Datos\bin\Debug\Datos.pdb
+D:\Cuarto Semestre\Programacion Avanzada\Pueba2HAgendaBD\Datos\bin\Debug\Entidades.dll
+D:\Cuarto Semestre\Programacion Avanzada\Pueba2HAgendaBD\Datos\bin\Debug\Entidades.pdb
+D:\Cuarto Semestre\Programacion Avanzada\Pueba2HAgendaBD\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+D:\Cuarto Semestre\Programacion Avanzada\Pueba2HAgendaBD\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+D:\Cuarto Semestre\Programacion Avanzada\Pueba2HAgendaBD\Datos\obj\Debug\Datos.csproj.CopyComplete
+D:\Cuarto Semestre\Programacion Avanzada\Pueba2HAgendaBD\Datos\obj\Debug\Datos.dll
+D:\Cuarto Semestre\Programacion Avanzada\Pueba2HAgendaBD\Datos\obj\Debug\Datos.pdb
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\No Tocar\Programacion Avanzada\Pueba2HAgendaBD\Datos\bin\Debug\Datos.dll.config
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\No Tocar\Programacion Avanzada\Pueba2HAgendaBD\Datos\bin\Debug\Datos.dll
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\No Tocar\Programacion Avanzada\Pueba2HAgendaBD\Datos\bin\Debug\Datos.pdb
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\No Tocar\Programacion Avanzada\Pueba2HAgendaBD\Datos\bin\Debug\Entidades.dll
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\No Tocar\Programacion Avanzada\Pueba2HAgendaBD\Datos\bin\Debug\Entidades.pdb
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\No Tocar\Programacion Avanzada\Pueba2HAgendaBD\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\No Tocar\Programacion Avanzada\Pueba2HAgendaBD\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\No Tocar\Programacion Avanzada\Pueba2HAgendaBD\Datos\obj\Debug\Datos.csproj.CopyComplete
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\No Tocar\Programacion Avanzada\Pueba2HAgendaBD\Datos\obj\Debug\Datos.dll
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\No Tocar\Programacion Avanzada\Pueba2HAgendaBD\Datos\obj\Debug\Datos.pdb
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\Cooperativa\Coperativa\Datos\bin\Debug\Datos.dll.config
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\Cooperativa\Coperativa\Datos\bin\Debug\Datos.dll
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\Cooperativa\Coperativa\Datos\bin\Debug\Datos.pdb
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\Cooperativa\Coperativa\Datos\bin\Debug\Entidades.dll
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\Cooperativa\Coperativa\Datos\bin\Debug\Entidades.pdb
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\Cooperativa\Coperativa\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\Cooperativa\Coperativa\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\Cooperativa\Coperativa\Datos\obj\Debug\Datos.csproj.CopyComplete
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\Cooperativa\Coperativa\Datos\obj\Debug\Datos.dll
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\Cooperativa\Coperativa\Datos\obj\Debug\Datos.pdb
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\EXAMEN-FINAL\Coperativa\Datos\bin\Debug\Datos.dll.config
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\EXAMEN-FINAL\Coperativa\Datos\bin\Debug\Datos.dll
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\EXAMEN-FINAL\Coperativa\Datos\bin\Debug\Datos.pdb
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\EXAMEN-FINAL\Coperativa\Datos\bin\Debug\Entidades.dll
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\EXAMEN-FINAL\Coperativa\Datos\bin\Debug\Entidades.pdb
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\EXAMEN-FINAL\Coperativa\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\EXAMEN-FINAL\Coperativa\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\EXAMEN-FINAL\Coperativa\Datos\obj\Debug\Datos.csproj.CopyComplete
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\EXAMEN-FINAL\Coperativa\Datos\obj\Debug\Datos.dll
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\EXAMEN-FINAL\Coperativa\Datos\obj\Debug\Datos.pdb
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\PROYECTO-ERICK\SISTEMA\SYSTEM-ER\Sistema\Datos\bin\Debug\Datos.dll.config
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\PROYECTO-ERICK\SISTEMA\SYSTEM-ER\Sistema\Datos\bin\Debug\Datos.dll
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\PROYECTO-ERICK\SISTEMA\SYSTEM-ER\Sistema\Datos\bin\Debug\Datos.pdb
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\PROYECTO-ERICK\SISTEMA\SYSTEM-ER\Sistema\Datos\bin\Debug\Entidades.dll
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\PROYECTO-ERICK\SISTEMA\SYSTEM-ER\Sistema\Datos\bin\Debug\Entidades.pdb
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\PROYECTO-ERICK\SISTEMA\SYSTEM-ER\Sistema\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\PROYECTO-ERICK\SISTEMA\SYSTEM-ER\Sistema\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\PROYECTO-ERICK\SISTEMA\SYSTEM-ER\Sistema\Datos\obj\Debug\Datos.csproj.CopyComplete
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\PROYECTO-ERICK\SISTEMA\SYSTEM-ER\Sistema\Datos\obj\Debug\Datos.dll
+G:\David\David\Escritorio\David\4. CUARTO SEMESTRE\PROGRAMACIÓN AVANZADA\PROYECTO-ERICK\SISTEMA\SYSTEM-ER\Sistema\Datos\obj\Debug\Datos.pdb
+C:\Users\david\Documents\DAVID\Programación\SYSTEM-ER\Sistema\Datos\bin\Debug\Datos.dll.config
+C:\Users\david\Documents\DAVID\Programación\SYSTEM-ER\Sistema\Datos\bin\Debug\Datos.dll
+C:\Users\david\Documents\DAVID\Programación\SYSTEM-ER\Sistema\Datos\bin\Debug\Datos.pdb
+C:\Users\david\Documents\DAVID\Programación\SYSTEM-ER\Sistema\Datos\bin\Debug\Entidades.dll
+C:\Users\david\Documents\DAVID\Programación\SYSTEM-ER\Sistema\Datos\bin\Debug\Entidades.pdb
+C:\Users\david\Documents\DAVID\Programación\SYSTEM-ER\Sistema\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\david\Documents\DAVID\Programación\SYSTEM-ER\Sistema\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\david\Documents\DAVID\Programación\SYSTEM-ER\Sistema\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\david\Documents\DAVID\Programación\SYSTEM-ER\Sistema\Datos\obj\Debug\Datos.dll
+C:\Users\david\Documents\DAVID\Programación\SYSTEM-ER\Sistema\Datos\obj\Debug\Datos.pdb
+C:\Users\david\Desktop\REPUESTOS KEV TECHNOLOGY\Sistema\Datos\bin\Debug\Datos.dll.config
+C:\Users\david\Desktop\REPUESTOS KEV TECHNOLOGY\Sistema\Datos\bin\Debug\Datos.dll
+C:\Users\david\Desktop\REPUESTOS KEV TECHNOLOGY\Sistema\Datos\bin\Debug\Datos.pdb
+C:\Users\david\Desktop\REPUESTOS KEV TECHNOLOGY\Sistema\Datos\bin\Debug\Entidades.dll
+C:\Users\david\Desktop\REPUESTOS KEV TECHNOLOGY\Sistema\Datos\bin\Debug\Entidades.pdb
+C:\Users\david\Desktop\REPUESTOS KEV TECHNOLOGY\Sistema\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\david\Desktop\REPUESTOS KEV TECHNOLOGY\Sistema\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\david\Desktop\REPUESTOS KEV TECHNOLOGY\Sistema\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\david\Desktop\REPUESTOS KEV TECHNOLOGY\Sistema\Datos\obj\Debug\Datos.dll
+C:\Users\david\Desktop\REPUESTOS KEV TECHNOLOGY\Sistema\Datos\obj\Debug\Datos.pdb
